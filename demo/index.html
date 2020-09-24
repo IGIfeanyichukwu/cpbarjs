@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body id="body">
+   
+    <div class="container">
+     <h1>CPBAR.JS</h1>
+      <div>
+       <span class="add-progress-bar"></span>
+       <span class="bar2"></span>
+       </div>
+       <div><span class="bar3"></span><span class="bar4"></span></div>
+
+    </div>
+    <script src="../dist/cpbar.js" ></script>
+    <script>
+    
+CPB.draw({
+    elementClass: 'add-progress-bar',
+    value: 0.606,
+    valueUnit: 'cm',
+    barBgColor: 'useGradient',
+    maxValue: 1,
+    valueFontSize: 50
+});
+
+CPB.draw({
+    elementClass: 'bar2',
+    setText: 'text',
+    useText: true,
+    value: '11',
+    valueColor: 'useGradient',
+    valueFontSize: '77',
+    valueFont: 'serif',
+    setGradient: [
+        ['pink', 0],
+        ['green', 50]
+    ],
+    indicatorCap: 'round'
+})
+
+CPB.draw({
+    elementClass: 'bar3',
+    value: 50
+})
+
+CPB.draw( {
+    elementClass: 'bar4',
+    value: 75,
+    trackColor: 'blue'
+})
+
+    </script>
+</body>
+
+</html>

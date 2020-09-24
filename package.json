@@ -1,0 +1,20 @@
+{
+  "name": "cpbarjs",
+  "version": "1.0.0",
+  "description": "cpbarjs is a javascript library for seamlessly creating circular progress bars",
+  "main": "./src/js/cpbar.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "parcel build -o cpbar.js --global CPB --no-source-maps ./src/js/cpbar.js"
+  },
+  "author": "I. G Ifeanyichukwu <if3cofr3sh@gmail.com> (Ifex)",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^1.8.10"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.1"
+  }
+}
