@@ -80,7 +80,7 @@ const draw = function draw(preferences) {
             elementClass: null,
             barSize: 200, //max is 1000
             barBgColor: 'grey',
-            barBgOpacity: '0',
+            barBgColorOpacity: '0',
             setText: 'CBP',
             useText: false,
             value: 0,
