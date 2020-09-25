@@ -7,18 +7,25 @@
     <title></title>
     <link rel="stylesheet" href="./style.css">
     <style>
-        .makeabs {
-            z-index: -1 !important;
-            top: 0;
-            height: 15rem;
-        }
+    .makeabs {
+        z-index: -1 !important;
+        top: 0;
+        height: 15rem;
+    }
 
-        .container {
-            z-index: 2
-        }
+    .container {
+        z-index: 2
+    }
 
-        .wrapper {}
+    .tab-fixed {
+        min-width: 35rem;
+    }
 
+    /*   .exam-wrap {
+        width: 20rem;
+        max-width: 100%;
+        margin: 1rem auto;
+    }*/
     </style>
 </head>
 
@@ -26,32 +33,23 @@
     <div class="absolute makeabs block bg-blue-500 w-full h-32 z-0 text-center pt-4 "><span class="text-5xl text-white font-mono font-bold">Cpbar.js</span><br />
         <span class="text-white">...library for circular progress bars</span>
     </div>
-
     <div class="container z-20 block   relative pt-32">
         <div class="wrapper bg-gray-100 rounded-lg lg:shadow-md block p-2 pt-4">
             <div>
                 <h1 class="border-blue-500 border-l-4 pl-2 text-2xl font-semibold">About</h1>
                 <p class="text-gray-700 mb-3 pl-3">Cpbar.js is a light-weight javascript library that provides you a seamless way of creating circular progress bars. All you need to do is call a function, provide preference and cpbar.js will take over from there.</p>
-
                 <h1 class="border-blue-500 border-l-4 pl-2 text-2xl font-semibold">Docs</h1>
                 <div class="lg:grid-cols-2 grid gap-2">
                     <div class="pl-4 mt-3">
                         <h2 class="font-semibold text-xl mb-2">Installation</h2>
                         <h3 class="text-lg">1. Using CDN</h3>
                         <p class="text-center py-2 sm:mx-8 my-2 rounded-l bg-gray-200 border border-gray-600"><code>&lt;script src="cdn.example.com/cpbar.js"&gt;&lt;/script&gt;</code></p>
-
                         <h3 class="text-lg">2. Use Package Manager</h3>
                         <p class="text-center py-2 sm:mx-8 my-2 rounded-l bg-gray-200 border border-gray-600"><code>npm i cpbarjs</code></p>
-                        
                         <h3 class="text-lg">3. Importing Cpbar.js</h3>
-                        <p class="text-gray-700">If you are using imports, use the following to import Cpbar.js</p> 
+                        <p class="text-gray-700">If you are using imports, use the following to import Cpbar.js</p>
                         <p class="text-center py-2 sm:mx-8 my-2 rounded-l bg-gray-200 border border-gray-600"><code>import CPB from 'cpbar'</code></p>
-
-                        
-
-                        
                     </div>
-
                     <div class="bg-gray-100 mt-3">
                         <h2 class="font-semibold text-xl mb-2">Initializing</h2>
                         <p class="text-gray-800">To create the circular progress bar, call the draw method and pass in an object of your preference for the circular progress bar.</p>
@@ -60,164 +58,361 @@
                         <div class="bg-red-200 border border-red-400 text-red-700 px-2 leading-tight py-1 relative my-5" role="alert">
                             <span class="block sm:inline text-sm">Always provide the elementClass value so cpbar.js will know where to render the progress bar to.</span>
                         </div>
-                        
                     </div>
-
                 </div>
                 <hr class="my-4">
-
                 <div class="flex justify-center">
-                 <div class="inline-block mx-auto sm:flex p-4 bg-white rounded-lg shadow-xl md:max-w-xl ml-auto">
-            <div>
-                <div class="default-example flex justify-center inline-block"></div>
-            </div>
-            <div class="ml-6 pt-1 flex flex-col justify-center ">
-                <h4 class="text-xl text-gray-900">Default Circular Progress Bar</h4>
-                <p class="text-base text-gray-600">CPB.draw({ elementClass: "example" }).</p>
-            </div>
-        </div>
-                </div>
-
-                <hr class="mt-8 mb-4">
-
-
-                <table>
-                            <thead>
-                                <tr>
-                                    <th>Properties</th>
-                                    <th>Function</th>
-                                    <th>Default Value</th>
-                                    <th>Possible Values</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                <td>barSize</td>
-                                <td>changes progress bar size</td>
-                                <td>200</td>
-                                <td>0 - 1000</td>
-                                </tr>
-                                <tr>
-                                <td>barBgColor</td>
-                                <td>changes background color</td>
-                                <td>grey</td>
-                                <td>any browser color</td>
-                                </tr>
-                                <tr>
-                                <td>trackColor</td>
-                                <td>changes track color</td>
-                                <td>#eee</td>
-                                <td>any browser color</td>
-                                </tr>
-                                <tr>
-                                <td>indicatorColor</td>
-                                <td>changes indicator color</td>
-                                <td>black</td>
-                                <td>any browser color</td>
-                                </tr>
-                                <tr>
-                                <td>valueColor</td>
-                                <td>changes background color</td>
-                                <td>black</td>
-                                <td>any browser color</td>
-                                </tr>
-                                <tr>
-                                <td>barBgOpacity</td>
-                                <td>changes background opacity</td>
-                                <td>0</td>
-                                <td>any browser color</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-
-                <div class="lg:grid-cols-2 grid gap-2">
-                    <div class="pl-4">
-                        <h2 class="font-semibold text-xl">Colors</h2>
-                        <h3 class="text-lg">1. Progress Bar Size</h3>
-                        <p>Use <mark class="bg-gray-300 text-blue-900 px-2">barSize:</mark> to change the size of the progress bar.</p>
-
-                        
-
-                        <h2 class="font-semibold text-xl">Sizing</h2>
-                        <h3 class="text-lg">1. Progress Bar Size</h3>
-                        <p>Use <mark class="bg-gray-300 text-blue-900 px-2">barSize:</mark> to change the size of the progress bar.</p>
-
-                        <div class="flex justify-center">
-                 <div class="inline-block mx-auto sm:flex p-4 bg-white rounded-lg shadow-xl md:max-w-xl ml-auto">
-            <div>
-                <div class="barSize-example flex justify-center inline-block"></div>
-            </div>
-            <div class="ml-6 pt-1 flex flex-col justify-center ">
-                <p class="text-base text-gray-600">CPB.draw({ elementClass: "example" }).</p>
-            </div>
-        </div>
-                </div>
-
-                        <h3 class="text-lg">Use Package Manager</h3>
-                        <p class="text-center py-2 sm:mx-8 my-2 rounded-l bg-gray-200 border border-gray-600"><code>npm i cpbarjs</code></p>
-                        
-                        <h3 class="text-lg">Importing Cpbar.js</h3>
-                        <p class="text-gray-700">If you are using imports, use the following to import Cpbar.js</p> 
-                        <p class="text-center py-2 sm:mx-8 my-2 rounded-l bg-gray-200 border border-gray-600"><code>import CPB from 'cpbar'</code></p>
-
-                        
-
-                        
+                    <div class="inline-block mx-auto sm:flex p-4 bg-white rounded-lg shadow-xl md:max-w-xl ml-auto">
+                        <div>
+                            <div class="default-example flex justify-center inline-block"></div>
+                        </div>
+                        <div class="ml-6 pt-1 flex flex-col justify-center ">
+                            <h4 class="text-xl text-gray-900">Default Circular Progress Bar</h4>
+                            <p class="text-base text-gray-600">CPB.draw({ elementClass: "example" }).</p>
+                        </div>
                     </div>
+                </div>
+                <hr class="mt-8 mb-4">
+                <div class="tab-wrap overflow-x-auto scrolling-touch">
+                    <table class="border-t-2 border-b-2 border-gray-500 md:w-5/6 mx-auto overflow-scroll tab-fixed mt-6 mb-6">
+                        <thead>
+                            <tr class="bg-gray-300 text-left ">
+                                <th class="pl-2 py-2">Properties</th>
+                                <th class="pl-2">Function</th>
+                                <th class="pl-2">Default Value</th>
+                                <th class="pl-2">Possible Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="text-sm border-t border-gray-400 text-gray-800">
+                                <td class="py-2 pl-2 text-orange-600">value</td>
+                                <td class="pl-2">sets the value of the indicator and the center text</td>
+                                <td class="pl-2">0</td>
+                                <td class="pl-2">0 - maxValue</td>
+                            </tr>
+                            <tr class="text-sm border-t border-gray-400 text-gray-800">
+                                <td class="py-2 pl-2 text-orange-600">maxValue</td>
+                                <td class="pl-2">sets the maximum value of the progress bar</td>
+                                <td class="pl-2">100</td>
+                                <td class="pl-2">any value</td>
+                            </tr>
+                            <tr class="text-sm border-t border-gray-400 text-gray-800">
+                                <td class="py-2 pl-2 text-orange-600">valueUnit</td>
+                                <td class="pl-2">sets the unit in the center text</td>
+                                <td class="pl-2">%</td>
+                                <td class="pl-2">any unit (%, pt, cm etc.)</td>
+                            </tr>
+                            <tr class="text-sm border-t border-gray-400 text-gray-800">
+                                <td class="py-2 pl-2 text-orange-600">valueFont</td>
+                                <td class="pl-2">sets the font-family of the center text</td>
+                                <td class="pl-2">monospace</td>
+                                <td class="pl-2">any browser font or font-stack</td>
+                            </tr>
+                            <tr class="text-sm border-t border-gray-400 text-gray-800">
+                                <td class="py-2 pl-2 text-orange-600">valueFontSize</td>
+                                <td class="pl-2">sets the font size of the center text</td>
+                                <td class="pl-2">60</td>
+                                <td class="pl-2">10 - 100</td>
+                            </tr>
+                            <tr class="text-sm md:text-md border-t border-gray-400 text-gray-800">
+                                <td class="py-2 pl-2 text-orange-600">barSize</td>
+                                <td class="pl-2">sets progress bar size</td>
+                                <td class="pl-2">200</td>
+                                <td class="pl-2">0 - 1000</td>
+                            </tr>
+                            <tr class="text-sm border-t border-gray-400 text-gray-800">
+                                <td class="py-2 pl-2 text-orange-600">indicatorSize</td>
+                                <td class="pl-2">sets the width of the indicator</td>
+                                <td class="pl-2">15</td>
+                                <td class="pl-2">0 - 40</td>
+                            </tr>
+                            <tr class="text-sm border-t border-gray-400 text-gray-800">
+                                <td class="py-2 pl-2 text-orange-600">trackSize</td>
+                                <td class="pl-2">sets the with of the track</td>
+                                <td class="pl-2">15</td>
+                                <td class="pl-2">0 - 40</td>
+                            </tr>
+                            <tr class="text-sm border-t border-gray-400 text-gray-800">
+                                <td class="py-2 pl-2 text-orange-600">indicatorCap</td>
+                                <td class="pl-2">sets how the ends of the indicator should look</td>
+                                <td class="pl-2">acute-square</td>
+                                <td class="pl-2">acute-square, square, round</td>
+                            </tr>
+                            <tr class="text-sm border-t border-gray-400 text-gray-800">
+                                <td class="py-2 pl-2 text-orange-600">barBgColor</td>
+                                <td class="pl-2">sets inner background color</td>
+                                <td class="pl-2">grey</td>
+                                <td class="pl-2">any browser color or useGradient (if gradient is set)</td>
+                            </tr>
+                            <tr class="text-sm border-t border-gray-400 text-gray-800">
+                                <td class="py-2 pl-2 text-orange-600">trackColor</td>
+                                <td class="pl-2">sets track color</td>
+                                <td class="pl-2">#eee</td>
+                                <td class="pl-2">any browser color or useGradient (if gradient is set)</td>
+                            </tr>
+                            <tr class="text-sm border-t border-gray-400 text-gray-800">
+                                <td class="py-2 pl-2 text-orange-600">indicatorColor</td>
+                                <td class="pl-2">sets indicator color</td>
+                                <td class="pl-2">black</td>
+                                <td class="pl-2">any browser color or useGradient (if gradient is set)</td>
+                            </tr>
+                            <tr class="text-sm border-t border-gray-400 text-gray-800">
+                                <td class="py-2 pl-2 text-orange-600">valueColor</td>
+                                <td class="pl-2">sets background color</td>
+                                <td class="pl-2">black</td>
+                                <td class="pl-2">any browser color or useGradient (if gradient is set)</td>
+                            </tr>
+                            <tr class="text-sm border-t border-gray-400 text-gray-800">
+                                <td class="py-2 pl-2 text-orange-600">barBgOpacity</td>
+                                <td class="pl-2">sets background opacity</td>
+                                <td class="pl-2">0</td>
+                                <td class="pl-2">0 - 1</td>
+                            </tr>
+                            <tr class="text-sm border-t border-gray-400 text-gray-800">
+                                <td class="py-2 pl-2 text-orange-600">valueOpacity</td>
+                                <td class="pl-2">sets the opacity of the center text</td>
+                                <td class="pl-2">1</td>
+                                <td class="pl-2">0 - 1</td>
+                            </tr>
+                            <tr class="text-sm border-t border-gray-400 text-gray-800">
+                                <td class="py-2 pl-2 text-orange-600">setText</td>
+                                <td class="pl-2">sets a text for the center text other than the given value</td>
+                                <td class="pl-2">CBP</td>
+                                <td class="pl-2">any text</td>
+                            </tr>
+                            <tr class="text-sm border-t border-gray-400 text-gray-800">
+                                <td class="py-2 pl-2 text-orange-600">useText</td>
+                                <td class="pl-2">replaces the center text with the set text</td>
+                                <td class="pl-2">0</td>
+                                <td class="pl-2">true or false (boolean)</td>
+                            </tr>
+                            <tr class="text-sm border-t border-gray-400 text-gray-800">
+                                <td class="py-2 pl-2 text-orange-600">setGradient</td>
+                                <td class="pl-2">sets a gradient that can be used by any property that takes in a color value</td>
+                                <td class="pl-2">[ ['rgba(0, 0, 0, 1)', 0], ['rgba(0, 0, 0, 0.5)', 50], ['rgba(0, 0, 0, 0.2)', 100] ]</td>
+                                <td class="pl-2">multi-dimension array of colors and their corresponding stops</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h1 class="border-blue-500 border-l-4 pl-2  text-2xl font-semibold">Examples</h1>
+                <div class="lg:grid-cols-2 grid gap-2">
+                    <div class="px-4">
+                        <h2 class="font-semibold text-xl ">Colors</h2>
+                        <div class="sm:px-10 my-6 mb-12">
+                            <div class="border-gray-400 rounded-lg border overflow-hidden grid grid-col-1 mx-4">
+                                <div class="example2 block flex justify-center"></div>
+                                <div class="code bg-gray-900 text-white  overflow-x-scroll whitespace-no-wrap py-5 px-4 font-mono  text-sm">CPB.draw({
+                                    elementClass: 'example2',
+                                    value: "40",
+                                    trackColor: "grey",
+                                    indicatorColor: "orange",
+                                    valueColor: "orange"
+                                    });</div>
+                            </div>
+                        </div>
 
+
+                        <div class="sm:px-10 my-6 mb-12">
+                            <div class="border-gray-400 rounded-lg border overflow-hidden grid grid-col-1 mx-4">
+                                <div class="example3 block flex justify-center"></div>
+                                <div class="code bg-gray-900 text-white  overflow-x-scroll whitespace-no-wrap py-5 px-4 font-mono  text-sm">CPB.draw({
+            elementClass: 'example3',
+            value: 2.7,
+            barSize: 150,
+            maxValue: 10,
+            valueUnit: 'cm',
+            trackColor: 'pink',
+            indicatorColor: 'rgb(214, 122, 127)',
+            indicatorSize: 30,
+            trackSize: 10,
+            indicatorCap: 'square',
+            valueFont: 'serif'
+        });</div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="sm:px-10 my-6 mb-12">
+                            <div class="border-gray-400 rounded-lg border overflow-hidden grid grid-col-1 mx-4">
+                                <div class="example4 block flex justify-center"></div>
+                                <div class="code bg-gray-900 text-white  overflow-x-scroll whitespace-no-wrap py-5 px-4 font-mono  text-sm">CPB.draw({
+                                    elementClass: 'example2',
+                                    value: "40",
+                                    trackColor: "grey",
+                                    indicatorColor: "orange",
+                                    valueColor: "orange"
+                                    });</div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="sm:px-10 my-6 mb-12">
+                            <div class="border-gray-400 rounded-lg border overflow-hidden grid grid-col-1 mx-4">
+                                <div class="example5 block flex justify-center"></div>
+                                <div class="code bg-gray-900 text-white  overflow-x-scroll whitespace-no-wrap py-5 px-4 font-mono  text-sm">CPB.draw({
+                                    elementClass: 'example2',
+                                    value: "40",
+                                    trackColor: "grey",
+                                    indicatorColor: "orange",
+                                    valueColor: "orange"
+                                    });</div>
+                            </div>
+                        </div>
+
+
+                        <div class="sm:px-10 my-6 mb-12">
+                            <div class="border-gray-400 rounded-lg border overflow-hidden grid grid-col-1 mx-4">
+                                <div class="example6 block flex justify-center"></div>
+                                <div class="code bg-gray-900 text-white  overflow-x-scroll whitespace-no-wrap py-5 px-4 font-mono  text-sm">CPB.draw({
+                                    elementClass: 'example2',
+                                    value: "40",
+                                    trackColor: "grey",
+                                    indicatorColor: "orange",
+                                    valueColor: "orange"
+                                    });</div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="sm:px-10 my-6 mb-12">
+                            <div class="border-gray-400 rounded-lg border overflow-hidden grid grid-col-1 mx-4">
+                                <div class="example7 block flex justify-center"></div>
+                                <div class="code bg-gray-900 text-white  overflow-x-scroll whitespace-no-wrap py-5 px-4 font-mono  text-sm">CPB.draw({
+                                    elementClass: 'example2',
+                                    value: "40",
+                                    trackColor: "grey",
+                                    indicatorColor: "orange",
+                                    valueColor: "orange"
+                                    });</div>
+                            </div>
+                        </div>
+
+
+                    </div>
                     <div class="bg-gray-100">
                         <h2 class="font-semibold text-xl">Initializing</h2>
-                        <p class="text-gray-800">To create the circular progress bar, call the draw method and pass in an object of your preference for the circular progress bar.</p>
-                        <p class="text-center py-2 sm:mx-8 my-3 rounded-l bg-gray-200 border border-gray-600"><code>CPB.draw({ elementClass: "example" })</code></p>
-                        <p class="text-gray-700">The above will create a circular progress bar with default preference.</p>
-                        <div class="bg-red-200 border border-red-400 text-red-700 px-2 leading-tight py-1 relative my-5" role="alert">
-                            <span class="block sm:inline text-sm">Always provide the elementClass value so cpbar.js will know where to render the progress bar to.</span>
-                        </div>
-                        
                     </div>
-
                 </div>
-
-                <p><code>barSize: 200,<br>barBgColor: 'grey',<br>barBgOpacity: '0',<br>setText: 'CBP',<br>useText: false,<br>value: 0,<br>valueUnit: '%',<br>valueColor: 'black',<br>valueFont: 'monospace',<br>valueFontSize: '60',<br>valueOpacity: '1',<br>maxValue: 100,<br>indicatorSize: '15',<br>indicatorColor: 'black',<br>indicatorCap: 'acute-square',<br>trackSize: 15,<br>trackColor: '#eee',<br>setGradient: [ ['rgba(0, 0, 0, 1)', 0], ['rgba(0, 0, 0, 0.5)', 50], ['rgba(0, 0, 0, 0.2)', 100] ]</code>
-                        </p>
-
+                <p><code>barSize: 200,<br>barBgColor: 'grey',<br>barBgColorOpacity: '0',<br>setText: 'CBP',<br>useText: false,<br>value: 0,<br>valueUnit: '%',<br>valueColor: 'black',<br>valueFont: 'monospace',<br>valueFontSize: '60',<br>valueOpacity: '1',<br>maxValue: 100,<br>indicatorSize: '15',<br>indicatorColor: 'black',<br>indicatorCap: 'acute-square',<br>trackSize: 15,<br>trackColor: '#eee',<br>setGradient: [ ['rgba(0, 0, 0, 1)', 0], ['rgba(0, 0, 0, 0.5)', 50], ['rgba(0, 0, 0, 0.2)', 100] ]</code>
+                </p>
             </div>
-
         </div>
-
         <script src="./cpbar.js"></script>
         <script>
-            CPB.draw({
-                elementClass: 'default-example'
-            });
+        CPB.draw({
+            elementClass: 'default-example'
+        });
 
-            CPB.draw({
-                elementClass: 'barSize-example',
-                barSize: 100,
-                setText: 'text',
-                useText: true,
-                value: '11',
-                valueColor: 'useGradient',
-                valueFontSize: '77',
-                valueFont: 'serif',
-                setGradient: [
-                    ['pink', 0],
-                    ['green', 50]
-                ],
-                indicatorCap: 'round'
-            })
+        CPB.draw({
+            elementClass: 'example2',
+            value: "65",
+            trackColor: "grey",
+            indicatorColor: "orange",
+            valueColor: "orange"
+        });
 
-            CPB.draw({
-                elementClass: 'bar3',
-                value: 50
-            })
+        CPB.draw({
+            elementClass: 'example3',
+            value: 2.7,
+            barSize: 150,
+            maxValue: 10,
+            valueUnit: 'cm',
+            trackColor: 'pink',
+            indicatorColor: 'rgb(214, 122, 127)',
+            indicatorSize: 30,
+            trackSize: 10,
+            indicatorCap: 'square',
+            valueFont: 'serif'
+        });
 
-            CPB.draw({
-                elementClass: 'bar4',
-                value: 75,
-                trackColor: 'blue'
-            })
+        CPB.draw({
+            elementClass: 'example4',
+            value: 75,
+            indicatorColor: '#ff00ff',
+            trackColor: '#191970',
+            trackSize: 35,
+            indicatorSize: 6,
+            indicatorCap: 'round',
+            valueColor: '#191970',
+            barBgColorOpacity: 1,
+            barBgColor: '#ff00ff',
+            // valueFont: 'sans-serif',
+            valueFontSize: 80
+        });
+
+        CPB.draw({
+            elementClass: 'example5',
+            value: 888,
+            maxValue: 1000,
+            valueUnit: 'km',
+            valueFontSize: 60,
+            indicatorColor: 'yellow',
+            trackColor: '#b22222',
+            trackSize: 40,
+            indicatorSize: 20,
+            indicatorCap: 'round',
+            valueColor: 'yellow',
+            barBgColorOpacity: 1,
+            barBgColor: '#b22222',
+            barSize: 300
+            // valueFont: 'sans-serif',
+        });
+
+
+        CPB.draw({
+            elementClass: 'example6',
+            value: 45,
+            maxValue: 50,
+            valueUnit: 'pt',
+            valueFontSize: 60,
+            indicatorColor: 'useGradient',
+            trackColor: '#ccc',
+            trackSize: 20,
+            indicatorSize: 20,
+            indicatorCap: 'round',
+            valueColor: 'useGradient',
+            barBgColorOpacity: 0,
+            barBgColor: '#b22222',
+            barSize: 180,
+            setGradient: [
+            [ "#572c82", 0],
+            [ "#49a09d", 50]
+            ],
+            useGradient: true
+            // valueFont: 'sans-serif',
+        });
+
+        CPB.draw({
+            elementClass: 'example7',
+            value: 95,
+            maxValue: 100,
+            valueUnit: 'pt',
+            valueFont: 'arial, sans-serif',
+            valueFontSize: 40,
+            indicatorColor: 'useGradient',
+            trackColor: '#ccc',
+            trackSize: 20,
+            indicatorSize: 20,
+            indicatorCap: 'acute-square',
+            valueColor: 'useGradient',
+            barBgColorOpacity: 0,
+            barBgColor: '#b22222',
+            barSize: 180,
+            setGradient: [
+            [ "#a8e6ce", 0],
+            [ "#dcedc2", 20],
+            [ "#ffd385", 40],
+            [ "#ffaaa6", 60],
+            [ "#ff8c94", 80]
+            ],
+            setText: 'Loading...',
+            useText: true
+            // valueFont: 'sans-serif',
+        });
 
         </script>
 </body>
