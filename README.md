@@ -1,4 +1,4 @@
-#Cpbar.js
+# Cpbar.js
 
 #### _...library for circular progress bars_
 
