@@ -1,0 +1,13 @@
+#Dependencies
+/node_modules
+/.cache
+LICENSE
+/demo
+/test
+tailwind.config.js
+package.json
+package-lock.json
+/tailwindsrc
+/src
+*.gz
+*.tgz

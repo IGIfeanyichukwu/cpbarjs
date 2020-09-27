@@ -30,7 +30,7 @@ Cpbar.js is open source licensed under the MIT license.
 
 ## Contributing
 
-Cpbar.js is built with vanillaJS and its documentation site is built with tailwindCSS.
+Cpbar.js is built with vanillaJS
 
 Clone the repository 
 
