@@ -1,8 +1,8 @@
-# Cpbar.js
+# Cyprobar
 
 #### _...library for circular progress bars_
 
-Cpbar.js is a light-weight javascript library that provides you a seamless way of creating circular progress bars.
+Cyprobar is a light-weight javascript library that provides you a seamless way of creating circular progress bars.
 
 ## Installation
 
@@ -10,27 +10,27 @@ Cpbar.js is a light-weight javascript library that provides you a seamless way o
 Include the script tag
 
 ```shell
-<script src="cdn.example.com/cpbar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cyprobar@1.0.0/dist/cyprobar.js"></script>
 ```
 
 ##### Install with npm:
 
 ```shell
-npm install cpbarjs
+npm install cyprobar
 ```
 
 ## Getting started
 
-Check out the [demo site](https://IGIfeanyichukwu/github.io/cpbarjs) for Cpbar.js full documentation. The documentation has all you need to quickly get started with Cpbar.js.
+Check out the [demo site](https://IGIfeanyichukwu/github.io/cyprobar) for Cyprobar full documentation. The documentation has all you need to quickly get started with Cpbar.js.
 
 
 ## License
 
-Cpbar.js is open source licensed under the MIT license.
+Cyprobar is open source licensed under the MIT license.
 
 ## Contributing
 
-Cpbar.js is built with vanillaJS
+Cyprobar is built with vanillaJS
 
 Clone the repository 
 
