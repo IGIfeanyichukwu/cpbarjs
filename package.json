@@ -9,28 +9,29 @@
   },
   "scripts": {
     "build": "parcel build -o cpbar.js --global CPB --no-source-maps ./src/js/cpbar.js",
-    "build:css": "tailwind build tailwindsrc/style-fetcher.css -o demo/style.css"
+    "build:css": "tailwind build tailwindsrc/style-fetcher.css -o demo/style.css",
+    "deploy": "gh-pages -d demo"
   },
   "keywords": [
-      "cpbar.js",
-      "cpbarjs",
-      "circular progress bar",
-      "progress bar",
-      "progress"
+    "cpbar.js",
+    "cpbarjs",
+    "circular progress bar",
+    "progress bar",
+    "progress"
   ],
   "author": "I. G Ifeanyichukwu <if3cofr3sh@gmail.com> (Ifex)",
   "license": "MIT",
+  "homepage": "https://IGIfeanyichukwu.github.io/cpbarjs",
   "dependencies": {
-    "tailwindcss": "^1.8.10"
   },
   "devDependencies": {
     "parcel": "^2.0.0-beta.1"
   },
   "repository": {
-      "type": "git",
-      "url": "git+https://github.com/IGIfeanyichukwu/cpbarjs.git"
+    "type": "git",
+    "url": "git+https://github.com/IGIfeanyichukwu/cpbarjs.git"
   },
   "bugs": {
-      "url": "https://github.com/IGIfeanyichukwu/cpbarjs/issues"
+    "url": "https://github.com/IGIfeanyichukwu/cpbarjs/issues"
   }
 }
