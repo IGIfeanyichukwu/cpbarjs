@@ -22,7 +22,7 @@ npm install cyprobar
 
 ## Getting started
 
-Check out the [demo site](https://IGIfeanyichukwu/github.io/cyprobar) for Cyprobar's full documentation. The documentation has all you need to quickly get started with Cpbar.js.
+Check out the [demo site](https://IGIfeanyichukwu/github.io/cyprobar) for Cyprobar's full documentation. The documentation has all you need to quickly get started with cyprobar.js.
 
 
 ## License
@@ -48,7 +48,7 @@ Clone the repository
     npm install -g parcel-bundler
 ```
 
-> Make your contributions to the src/js/cpbar.js file.
+> Make your contributions to the src/js/cyprobar.js file.
 
 * For production
 
