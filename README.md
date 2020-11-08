@@ -22,7 +22,11 @@ npm install cyprobar
 
 ## Getting started
 
+<<<<<<< HEAD
 Check out the [demo site](https://IGIfeanyichukwu/github.io/cyprobar) for Cyprobar's full documentation. The documentation has all you need to quickly get started with cyprobar.js.
+=======
+Check out the [demo site](https://IGIfeanyichukwu.github.io/cyprobar) for Cyprobar's full documentation. The documentation has all you need to quickly get started with Cpbar.js.
+>>>>>>> 4a020484a9da412519e781b11a9012a9a0eb84e9
 
 
 ## License
