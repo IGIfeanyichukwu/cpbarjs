@@ -19,16 +19,16 @@
     "progress bar",
     "progress"
   ],
-  "author": "I. G Ifeanyichukwu <if3cofr3sh@gmail.com> (Ifex)",
+  "author": "Gideon Idoko <iamgideonidoko@gmail.com>",
   "license": "MIT",
-  "homepage": "https://IGIfeanyichukwu.github.io/cyprobar",
+  "homepage": "https://IamGideonIdoko.github.io/cyprobar",
   "dependencies": {
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IGIfeanyichukwu/cyprobar.git"
+    "url": "git+https://github.com/IamGideonIdoko/cyprobar.git"
   },
   "bugs": {
-    "url": "https://github.com/IGIfeanyichukwu/cyprobar/issues"
+    "url": "https://github.com/IamGideonIdoko/cyprobar/issues"
   }
 }

@@ -23,7 +23,7 @@ npm install cyprobar
 ## Getting started
 
 
-Check out the [demo site](https://IGIfeanyichukwu/github.io/cyprobar) for Cyprobar's full documentation. The documentation has all you need to quickly get started with cyprobar.js.
+Check out the [demo site](https://IamGideonIdoko/github.io/cyprobar) for Cyprobar's full documentation. The documentation has all you need to quickly get started with cyprobar.js.
 
 
 ## License
@@ -32,12 +32,12 @@ Cyprobar is open source licensed under the MIT license.
 
 ## Contributing
 
-Cyprobar is built with vanillaJS and bundled with parcel. If you happen to find any bug while using this library or you have a features request, do well to [create an issue](https://github.com/IGIfeanyichukwu/cyprobar/issues) on it.
+Cyprobar is built with vanillaJS and bundled with parcel. If you happen to find any bug while using this library or you have a features request, do well to [create an issue](https://github.com/IamGideonIdoko/cyprobar/issues) on it.
 
 Clone the repository 
 
 ```bash
-    git clone https://github.com/IGIfeanyichukwu/cyprobar.git
+    git clone https://github.com/IamGideonIdoko/cyprobar.git
 ```
 
 
@@ -59,8 +59,8 @@ Clone the repository
     npm run build
 ```
 
-[Pull requests](https://github.com/IGIfeanyichukwu/cyprobar/pulls) are highly welcome.
+[Pull requests](https://github.com/IamGideonIdoko/cyprobar/pulls) are highly welcome.
 
 
 ### Author
-[I. G Ifeanyichuwku (Ifex)](https://ig-ifex.netlify.app)
+[Gideon Idoko](https://gideonidoko.netlify.app)
