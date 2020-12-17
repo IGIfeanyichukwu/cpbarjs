@@ -23,7 +23,7 @@ npm install cyprobar
 ## Getting started
 
 
-Check out the [demo site](https://IamGideonIdoko/github.io/cyprobar) for Cyprobar's full documentation. The documentation has all you need to quickly get started with cyprobar.js.
+Check out the [demo site](https://IamGideonIdoko.github.io/cyprobar) for Cyprobar's full documentation. The documentation has all you need to quickly get started with cyprobar.js.
 
 
 ## License
