@@ -1,6 +1,6 @@
 {
   "name": "cyprobar",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "Cyprobar is a JavaScript library for seamlessly creating circular progress bars.",
   "main": "dist/cyprobar.js",
   "bin": "dist/cyprobar.js",
